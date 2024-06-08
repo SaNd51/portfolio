@@ -8,15 +8,18 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="nav-bar" id="nav">
-      <div class="container">
-        <div class="nav-itens bg-primary">
-          <h1><a class="nav-link" href="#">Sander</a></h1>
-          <ul class="itens">
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#portfolio">portfolio</a></li>
-            <li><a class="nav-link" href="#about">about</a></li>
+    <nav class="nav-bar" >
+      <div class="container" id="nav">
+        <div class="nav-itens bg-secondary" id="lista">
+          <h1><a class="nav-link" href="#" onclick="nav()">Sander</a></h1>
+          <ul class="itens" id="ul">
+            <li><a class="nav-link" href="#home" onclick="nav()">Home</a></li>
+            <li><a class="nav-link" href="#portfolio" onclick="nav()">portfolio</a></li>
+            <li><a class="nav-link" href="#about" onclick="nav()">about</a></li>
           </ul>
+          <a  class="icon nav-link" id="icon">
+            <i class="fa fa-bars fa-2xl" onclick="navResponsive()"></i>
+          </a>
         </div>
       </div>
     </nav>
@@ -24,8 +27,8 @@
       <div class="container">
         <div class="grid-itens bg-secondary">
           <div class="itens aling-center">
-            <h1 class="mb">hello! im sander,
-              Dev junior</h1>
+            <h1 class="mb"><span translate=”no”>hello! i m sander,
+              Dev junior</h1></span>
             <a class="nav-link-secondary" href="https://github.com/SaNd51" target="_black" rel="noopenner norefferer"><i class="fa-brands fa-github fa-2xl"></i> Github</a>
             
           </div>
@@ -70,7 +73,7 @@
                 <h1>coin</h1>
 
 
-                <p>using api of cotacion</p>
+                <p>using api of coins price </p>
               </a>
               <a class="nav-link bg-primary mb" href="https://github.com/SaNd51/API-moedas" target="_black" rel="noopenner norefferer">
                 <i class="fa-brands fa-github fa-2xl"></i>
@@ -106,7 +109,7 @@
     <footer class="footer">
       <div class="container">
         <div class="bg-primary">
-          <small>Copyright &copy; Sander 2024</small>
+          <small><span translate=”no”> Copyright &copy; Sander 2024</span></small>
         </div>
       </div>
       <script src=""></script>
